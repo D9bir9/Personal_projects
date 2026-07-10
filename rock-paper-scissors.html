@@ -136,7 +136,7 @@
 
       <div class="results">
         <div>
-          Wins: <span id="wins"></span> | Losses: <span id="loses"></span> | Ties <span id="ties"></span>
+          Wins: <span id="wins"></span> | Losses: <span id="losses"></span> | Ties <span id="ties"></span>
         </div>
         <div class="reset">
         <button onclick="
@@ -164,7 +164,7 @@
 
       const score = JSON.parse(localStorage.getItem('score')) || {
         win: 0,
-        loses: 0,
+        losses: 0,
         tie: 0
       };
 
@@ -202,7 +202,7 @@
         }
         else{
           result = 'You Lost';
-          score.loses++;
+          score.losses++;
         }
 
         return result;
@@ -227,7 +227,7 @@
 
       function results(){
         document.getElementById("wins").innerHTML = score.win;
-        document.getElementById("loses").innerHTML = score.loses;
+        document.getElementById("losses").innerHTML = score.losses;
         document.getElementById("ties").innerHTML = score.tie;
       }
 
@@ -237,7 +237,7 @@
       }
 
       function reset(){
-        score.win = score.loses = score.tie = 0;
+        score.win = score.losses = score.tie = 0;
         localStorage.removeItem('score');
         localStorage.removeItem('historyTracker');
         localStorage.removeItem('gameHistory');
