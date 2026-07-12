@@ -1,0 +1,22 @@
+body{
+  background-color: rgba(0, 0, 0, 0.274);
+}
+
+.link{
+  width: auto;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  background-color: black;
+  color: yellow;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.link a,
+.link a:visited,
+.link a:active{
+  text-decoration: none;
+  color: inherit;
+}
