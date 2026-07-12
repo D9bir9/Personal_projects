@@ -34,6 +34,67 @@
         display: flex;
         align-items: center;
       }
+
+      .keys{
+        background-color: orange;
+        flex: 1;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .operator-keys{
+        background-color: pink;
+        flex: 0.25;
+      }
+      .input-keys{
+        background-color: aqua;
+        flex: 0.75;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .general-keys{
+        flex: 1;
+        background-color: yellow;
+        display: flex;
+      }
+      .number-keys{
+        flex: 4;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+
+      }
+      .num-row{
+        display: flex;
+        background-color: gray;
+        flex: 1;
+        align-items: center;
+      }
+      .num-row div{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .last-row{
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      .zero{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+      }
+      .dot{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
     </style>
   </head>
   <body>
@@ -45,6 +106,60 @@
         </div>
         <div class="screen-result">
           result
+        </div>
+      </div>
+      <div class="keys">
+        <div class="input-keys">
+          <div class="general-keys">
+
+          </div>
+          <div class="number-keys">
+            <div class="num-row">
+              <div>
+                <button>number</button>
+              </div>
+              <div>
+                <button>number</button>
+              </div>
+              <div>
+                <button>number</button>
+              </div>
+            </div>
+            <div class="num-row">
+              <div class="">
+                <button>number</button>
+              </div>
+              <div>
+                <button>number</button>
+              </div>
+              <div>
+                <button>number</button>
+              </div>
+            </div>
+            <div class="num-row">
+              <div>
+                <button>number</button>
+              </div>
+              <div>
+                <button>number</button>
+              </div>
+              <div>
+                <button>number</button>
+              </div>
+            </div>
+            <div class="last-row">
+              <div class="zero">
+                <button>number</button>
+              </div>
+              <div class="dot">
+                <button>number</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="operator-keys">
+
         </div>
       </div>
     </div>
