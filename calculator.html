@@ -46,6 +46,15 @@
       .operator-keys{
         background-color: pink;
         flex: 0.25;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .operator-keys div{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        
       }
       .input-keys{
         background-color: aqua;
@@ -101,6 +110,26 @@
         justify-content: center;
       }
 
+      .general-keys button{
+        padding: 20px 20px;
+        border-radius: 40px;
+        border: none;
+      }
+      .number-keys button{
+        padding: 20px 25px;
+        border-radius: 40px;
+        border: none;
+      }
+      .operator-keys button{
+        padding: 20px 25px;
+        border-radius: 40px;
+        border: none;
+      }
+      .zero button{
+        padding-left: 75px;
+        padding-right: 75px;
+      }
+
     </style>
   </head>
   <body>
@@ -118,62 +147,76 @@
         <div class="input-keys">
           <div class="general-keys">
             <div>
-              <button>button</button>
+              <button>AC</button>
             </div>
             <div>
-              <button>button</button>
+              <button>+/-</button>
             </div>
             <div>
-              <button>button</button>
+              <button>%</button>
             </div>
           </div>
           <div class="number-keys">
             <div class="num-row">
               <div>
-                <button>number</button>
+                <button>7</button>
               </div>
               <div>
-                <button>number</button>
+                <button>8</button>
               </div>
               <div>
-                <button>number</button>
+                <button>9</button>
               </div>
             </div>
             <div class="num-row">
               <div class="">
-                <button>number</button>
+                <button>4</button>
               </div>
               <div>
-                <button>number</button>
+                <button>5</button>
               </div>
               <div>
-                <button>number</button>
+                <button>6</button>
               </div>
             </div>
             <div class="num-row">
               <div>
-                <button>number</button>
+                <button>1</button>
               </div>
               <div>
-                <button>number</button>
+                <button>2</button>
               </div>
               <div>
-                <button>number</button>
+                <button>3</button>
               </div>
             </div>
             <div class="last-row">
               <div class="zero">
-                <button>number</button>
+                <button>0</button>
               </div>
               <div class="dot">
-                <button>number</button>
+                <button>.</button>
               </div>
             </div>
           </div>
 
         </div>
         <div class="operator-keys">
-
+          <div>
+            <button>&#247;</button>
+          </div>
+          <div>
+            <button>&#215;</button>
+          </div>
+          <div>
+            <button>&#8722;</button>
+          </div>
+          <div>
+            <button>&#x2b;</button>
+          </div>
+          <div>
+            <button>&#x3D;</button>
+          </div>
         </div>
       </div>
     </div>
