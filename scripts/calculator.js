@@ -5,6 +5,7 @@
         let expression = document.getElementById('js-screen-input').value;
         expression = expression.replace(/&#215;|×/g,'*');
         expression = expression.replace(/&#247;|÷/g,'/');
+        expression = expression.replace(/&#8722|−/g,'-');
         try{
           // const result = math.evaluate(expression);
           const result = math.evaluate(expression);
