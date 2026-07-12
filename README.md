@@ -5,6 +5,11 @@
 
 
 https://github.com/user-attachments/assets/7ba95496-9ce1-4f2d-96f7-ebda49f62020
+## Calculator design time lapse
+
+
+https://github.com/user-attachments/assets/abe931bc-b07c-4d12-98c8-a4740971f4bf
+
 
 
 ## Rock Paper Scissors
