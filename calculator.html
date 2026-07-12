@@ -10,7 +10,7 @@
       <div class="calculator">
         <div class="screen">
           <div class="screen-input">
-            2+2
+            <input id="js-screen-input" type="text">
           </div>
           <div class="screen-result">
             4
@@ -19,8 +19,8 @@
         <div class="keys">
           <div class="input-keys">
             <div class="general-keys">
-              <div>
-                <button>AC</button>
+              <div class="delete-key">
+                <button>AC/C</button>
               </div>
               <div>
                 <button>+/-</button>
@@ -32,43 +32,65 @@
             <div class="number-keys">
               <div class="num-row">
                 <div>
-                  <button>7</button>
+                  <button onclick="
+                    addElement(7);
+                    ">7</button>
                 </div>
                 <div>
-                  <button>8</button>
+                  <button onclick="
+                    addElement(8);
+                    ">8</button>
                 </div>
                 <div>
-                  <button>9</button>
+                  <button onclick="
+                    addElement(9);
+                    ">9</button>
                 </div>
               </div>
               <div class="num-row">
                 <div class="">
-                  <button>4</button>
+                  <button onclick="
+                    addElement(4);
+                    ">4</button>
                 </div>
                 <div>
-                  <button>5</button>
+                  <button onclick="
+                    addElement(5);
+                    ">5</button>
                 </div>
                 <div>
-                  <button>6</button>
+                  <button onclick="
+                    addElement(6);
+                    ">6</button>
                 </div>
               </div>
               <div class="num-row">
                 <div>
-                  <button>1</button>
+                  <button onclick="
+                    addElement(1);
+                    ">1</button>
                 </div>
                 <div>
-                  <button>2</button>
+                  <button onclick="
+                    addElement(2);
+                    ">2</button>
                 </div>
                 <div>
-                  <button>3</button>
+                  <button onclick="
+                    addElement(3);
+                    ">3</button>
                 </div>
               </div>
               <div class="last-row">
                 <div class="zero">
-                  <button>0</button>
+                  <button onclick="
+                    addElement(0);
+                    ">0</button>
                 </div>
                 <div class="dot">
-                  <button>.</button>
+                  <button onclick="
+                    addElement('.');
+                    ">.</button>
                 </div>
               </div>
             </div>
@@ -95,7 +117,9 @@
       </div>
     </div>
     <script>
-      
+      function addElement(elem){
+        document.getElementById("js-screen-input").value += elem;
+      }
     </script>
   </body>
 </html>
