@@ -48,7 +48,7 @@
 
 .keys button{
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.63);
-  transition: box-shadow 0.15s, padding 0.15s;
+  transition: box-shadow 0.15s, padding 0.15s, font-size 0.15s;
   cursor: pointer;
 }
 
@@ -117,32 +117,30 @@
 .general-keys button{
   padding: 20px 20px;
   border-radius: 40px;
+  font-size: 16px;
   background-color: rgb(235, 235, 235);
   border: none;
 }
 
 .general-keys button:active{
-  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.63);
-  padding-left: 22px;
-  padding-right: 18px;
-  padding-top: 22px;
-  padding-bottom: 18px;
+  box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.63);
+  padding: 19.5px 19px;
+  font-size: 14.5px;
+
 }
 
 .number-keys button{
   padding: 20px 25px;
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: 15px;
+  font-size: 16px;
   color: white;
   border: none;
 }
 .number-keys button:active{
-  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.63);
-  padding-left: 27px;
-  padding-right: 23px;
-  padding-top: 22px;
-  padding-bottom: 18px;
+  box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.63);
+  padding: 19.5px 24px;
+  font-size: 14px;
 }
 .operator-keys button{
   padding: 12px 20px;
@@ -154,11 +152,9 @@
 }
 
 .operator-keys button:active{
-  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.63);
-  padding-left: 22px;
-  padding-right: 18px;
-  padding-top: 14px;
-  padding-bottom: 10px;
+  box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.63);
+  padding: 11.5px 19px;
+  font-size: 26.5px;
 }
 
 .zero button{
@@ -166,9 +162,10 @@
   padding-right: 100px;
 }
 .zero button:active{
-  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.63);
-  padding-left: 27px;
-  padding-right: 98px;
-  padding-top: 22px;
-  padding-bottom: 18px;
+  box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.63);
+  padding-left: 25px;
+  padding-right: 99px;
+  padding-top: 19.5px;
+  padding-bottom: 19.5px;
+  font-size: 14px;
 }
