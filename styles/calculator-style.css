@@ -1,0 +1,128 @@
+.calculator{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 450px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 8);
+}
+
+.screen{
+  flex: 0.25;
+  background-color: rgba(255, 255, 255, 0.678);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px 5px 20px;
+  border-radius: 10px;
+}
+.screen-input{
+  flex: 1;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.screen-result{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.keys{
+  flex: 0.75;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.operator-keys{
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.operator-keys div{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  
+}
+.input-keys{
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+}
+
+.general-keys{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.general-keys div{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.number-keys{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+
+}
+.num-row{
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.num-row div{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.last-row{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.zero{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.dot{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.general-keys button{
+  padding: 20px 20px;
+  border-radius: 40px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+}
+.number-keys button{
+  padding: 20px 25px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  color: white;
+  border: none;
+}
+.operator-keys button{
+  padding: 12px 20px;
+  border-radius: 40px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 28px;
+}
+.zero button{
+  padding-left: 25px;
+  padding-right: 100px;
+}
