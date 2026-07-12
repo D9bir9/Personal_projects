@@ -48,7 +48,7 @@
 
 .keys button{
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.63);
-  transition: box-shadow 0.15s, padding 0.15s, font-size 0.15s;
+  transition: box-shadow 0.15s, padding 0.15s, font-size 0.15s, margin 0.15s;
   cursor: pointer;
 }
 
@@ -127,6 +127,17 @@
   padding: 19.5px 19px;
   font-size: 14.5px;
 
+}
+
+.delete-key {
+  padding-left: 4px;
+}
+
+.delete-key button:active{
+  box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.63);
+  padding: 19.5px 20px;
+  font-size: 14.5px;
+  margin-right: 3.7px;
 }
 
 .number-keys button{
