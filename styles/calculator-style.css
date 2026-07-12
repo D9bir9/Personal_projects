@@ -32,7 +32,8 @@
   flex: 1;
   margin-bottom: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .screen-input input{
   background-color: inherit;
@@ -40,6 +41,7 @@
   border: none;
   outline: none;
   font-size: inherit;
+  font-family: inherit;
 }
 .screen-result{
   flex: 1;
