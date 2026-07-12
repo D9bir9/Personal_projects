@@ -22,11 +22,16 @@
               <div class="delete-key">
                 <button>AC/C</button>
               </div>
-              <div>
+              <div class="invert-key">
                 <button>+/-</button>
               </div>
-              <div>
-                <button>%</button>
+              <div class="bracket-keys">
+                <button onclick="
+                    addElement('&#40;');
+                    ">&#40;</button>
+                <button onclick="
+                    addElement('&#41;');
+                    ">&#41;</button>
               </div>
             </div>
             <div class="number-keys">
@@ -98,16 +103,24 @@
           </div>
           <div class="operator-keys">
             <div>
-              <button>&#247;</button>
+              <button onclick="
+                    addElement('&#247;');
+                    ">&#247;</button>
             </div>
             <div>
-              <button>&#215;</button>
+              <button onclick="
+                    addElement('&#215;');
+                    ">&#215;</button>
             </div>
             <div>
-              <button>&#8722;</button>
+              <button onclick="
+                    addElement('&#8722;');
+                    ">&#8722;</button>
             </div>
             <div>
-              <button>&#x2b;</button>
+              <button onclick="
+                    addElement('&#x2b;');
+                    ">&#x2b;</button>
             </div>
             <div>
               <button>&#x3D;</button>

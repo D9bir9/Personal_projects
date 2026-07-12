@@ -142,10 +142,17 @@
 }
 
 .delete-key button:active{
-  box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.63);
   padding: 19.5px 20px;
-  font-size: 14.5px;
   margin-right: 3.7px;
+}
+
+.invert-key button:active{
+  margin-right: 2.7px;
+  margin-left: 1px;
+}
+
+.bracket-keys button:active{
+  margin-right: 2.5px;
 }
 
 .number-keys button{
