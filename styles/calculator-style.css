@@ -154,7 +154,7 @@
 .operator-keys button:active{
   box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.63);
   padding: 11.5px 19px;
-  font-size: 26.5px;
+  font-size: 25px;
 }
 
 .zero button{
