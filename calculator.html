@@ -2,8 +2,53 @@
 <html>
   <head>
     <title>Calculator</title>
+    <style>
+
+      .calculator{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 400px;
+        height: 550px;
+        padding: 20px 10px;
+      }
+
+      .screen{
+        height: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 10px;
+      }
+      .screen-input{
+        flex: 1;
+        margin-bottom: 10px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+      }
+      .screen-result{
+        flex: 1;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
+
+    <div class="calculator">
+      <div class="screen">
+        <div class="screen-input">
+          input
+        </div>
+        <div class="screen-result">
+          result
+        </div>
+      </div>
+    </div>
+
     <script>
       
     </script>
