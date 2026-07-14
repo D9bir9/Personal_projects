@@ -148,6 +148,8 @@ const resetBtnElement = document.getElementById('js-reset-button');
 const autoPlayElement = document.getElementById('js-autoPlay-button');
 const backBtnElement = document.getElementById('js-back-button');
 const nextBtnElement = document.getElementById('js-next-button');
+const gameBodyElement = document.body;
+console.log(gameBodyElement);
 
 rockElement.addEventListener('click', () => playMove(0));
 
@@ -162,3 +164,27 @@ autoPlayElement.addEventListener('click', () => autoPlay());
 backBtnElement.addEventListener('click', () => back());
 
 nextBtnElement.addEventListener('click', () => next());
+
+gameBodyElement.addEventListener('keydown', (event) => {
+  if(event.key === 'r'){
+    rockElement.dispatchEvent(new Event('click'));
+  }
+  if(event.key === 'p'){
+    paperElement.dispatchEvent(new Event('click'));
+  }
+  if(event.key === 's'){
+    scissorsElement.dispatchEvent(new Event('click'));
+  }
+  if(event.key === 'q'){
+    resetBtnElement.dispatchEvent(new Event('click'));
+  }
+  if(event.key === 'a'){
+    autoPlayElement.dispatchEvent(new Event('click'));
+  }
+  if(event.key === 'ArrowLeft'){
+    backBtnElement.dispatchEvent(new Event('click'));
+  }
+  if(event.key === 'ArrowRight'){
+    nextBtnElement.dispatchEvent(new Event('click'));
+  }
+});
