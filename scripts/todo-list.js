@@ -1,4 +1,4 @@
-const todoList = [];
+const todoList = JSON.parse(localStorage.getItem('todoList')) || [];
 renderTodoList();
 
 function renderTodoList(){
@@ -18,12 +18,14 @@ function renderTodoList(){
           </div>
         </div>`;
   });
+  localStorage.setItem('todoList', JSON.stringify(todoList));
   document.querySelector('.lists').innerHTML = todoHTML;
   document.getElementById('js-todo-date').valueAsDate = new Date();
 }
 
 function del(index){
   todoList.splice(index,1);
+  localStorage.setItem('todoList', JSON.stringify(todoList));
   renderTodoList();
 }
 
