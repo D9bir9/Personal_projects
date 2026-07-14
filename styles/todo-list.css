@@ -45,6 +45,11 @@
   cursor: pointer;
 }
 
+.add-btn:active{
+  padding: 4.5px 7.5px;
+  box-shadow: inset -1px -1px 5px rgba(0, 0, 0, 0.37);
+}
+
 .heading{
   margin-bottom: 20px;
 }
@@ -76,4 +81,10 @@
   border-radius: 6px;
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.37);
   cursor: pointer;
+}
+
+.lists .btn button:active{
+  padding: 4.5px 7.5px;
+  margin: 0.5px;
+  box-shadow: inset -1px -1px 5px rgba(0, 0, 0, 0.37);
 }
