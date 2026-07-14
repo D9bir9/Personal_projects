@@ -149,30 +149,16 @@ const autoPlayElement = document.getElementById('js-autoPlay-button');
 const backBtnElement = document.getElementById('js-back-button');
 const nextBtnElement = document.getElementById('js-next-button');
 
-rockElement.addEventListener('click', () => {
-  playMove(0);
-});
+rockElement.addEventListener('click', () => playMove(0));
 
-paperElement.addEventListener('click', () => {
-  playMove(1);
-});
+paperElement.addEventListener('click', () => playMove(1));
 
-scissorsElement.addEventListener('click', () => {
-  playMove(2);
-});
+scissorsElement.addEventListener('click', () => playMove(2));
 
-resetBtnElement.addEventListener('click', () => {
-  reset();
-});
+resetBtnElement.addEventListener('click', () => reset());
 
-autoPlayElement.addEventListener('click', () => {
-  autoPlay();
-});
+autoPlayElement.addEventListener('click', () => autoPlay());
 
-backBtnElement.addEventListener('click', () => {
-  back();
-});
+backBtnElement.addEventListener('click', () => back());
 
-nextBtnElement.addEventListener('click', () => {
-  next();
-});
+nextBtnElement.addEventListener('click', () => next());
