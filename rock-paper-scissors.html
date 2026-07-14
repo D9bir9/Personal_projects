@@ -52,11 +52,16 @@
           Wins: <span id="wins"></span> | Losses: <span id="losses"></span> | Ties <span id="ties"></span>
         </div>
         <div class="reset">
-        <button onclick="
-          reset();
-          results();
-          showIndex();
-          ">Reset Score</button>
+          <button onclick="
+            reset();
+            results();
+            showIndex();
+            ">Reset Score</button>
+          <button id="js-autoPlay-btn" onclick="
+            autoPlay();
+          ">
+            Auto Play
+          </button>
       </div>
       </div>
     </div>

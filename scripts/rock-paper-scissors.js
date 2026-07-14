@@ -22,6 +22,8 @@ const history_tracker = JSON.parse(localStorage.getItem('historyTracker')) || {
   len_index:0
 };
 
+let autoInterval;
+
 
 function play(){
   playerMove.computer = pickComputerMove();
@@ -115,3 +117,19 @@ function next(){
     history_tracker.cur_index++
   }  
 }
+
+function autoPlay(){
+  const autoPlayElement = document.getElementById('js-autoPlay-btn');
+  if (autoPlayElement.innerText === 'Auto Play'){
+    autoInterval = setInterval(() => {
+    playerMove.human = pickComputerMove();
+    play();
+    }, 1500);
+    autoPlayElement.innerText = 'Stop';
+  }
+  else{
+    clearInterval(autoInterval);
+    autoPlayElement.innerText = 'Auto Play';
+  }
+}
+  
