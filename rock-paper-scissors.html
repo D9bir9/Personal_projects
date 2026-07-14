@@ -4,23 +4,13 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles/rock-paper-scissors.css">
     <link rel="stylesheet" href="styles/shared.css">
-    <script src="scripts/rock-paper-scissors.js"></script>
   </head>
   <body>
     <div class="game">
       <div class="play">
-        <button onclick="
-          playerMove.human = moves[0];
-          play();
-          ">✊</button>
-        <button onclick="
-          playerMove.human = moves[1];
-          play();
-          ">🖐️</button>
-        <button onclick="
-          playerMove.human = moves[2];
-          play();
-          ">✌️</button>
+        <button id="js-rock-button">✊</button>
+        <button id="js-paper-button">🖐️</button>
+        <button id="js-scissors-button">✌️</button>
      </div>
 
     <div class="screen">
@@ -34,14 +24,8 @@
           <span id="current_index"> </span>|<span id="total_index"> </span>
         </div>
         <div class="btn">
-        <button onclick="
-          back();
-          showIndex();
-          ">&#60;</button>
-        <button onclick="
-        next();
-        showIndex();
-        ">&#62;</button>
+        <button id="js-back-button">&#60;</button>
+        <button id="js-next-button">&#62;</button>
       </div>
       </div>
       
@@ -52,16 +36,8 @@
           Wins: <span id="wins"></span> | Losses: <span id="losses"></span> | Ties <span id="ties"></span>
         </div>
         <div class="reset">
-          <button onclick="
-            reset();
-            results();
-            showIndex();
-            ">Reset Score</button>
-          <button id="js-autoPlay-btn" onclick="
-            autoPlay();
-          ">
-            Auto Play
-          </button>
+          <button id="js-reset-button">Reset Score</button>
+          <button id="js-autoPlay-button">Auto Play</button>
       </div>
       </div>
     </div>
@@ -73,5 +49,7 @@
         <a href="todo-list.html">todo-list</a>
       </div>
     </div>
+
+    <script src="scripts/rock-paper-scissors.js"></script>
   </body>
 </html>

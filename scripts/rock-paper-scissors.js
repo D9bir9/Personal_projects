@@ -24,6 +24,10 @@ const history_tracker = JSON.parse(localStorage.getItem('historyTracker')) || {
 
 let autoInterval;
 
+function playMove(move){
+  playerMove.human = moves[move];
+  play();
+}
 
 function play(){
   playerMove.computer = pickComputerMove();
@@ -96,6 +100,8 @@ function reset(){
   history_tracker.tot_index = '';
   gameHistory.result_list = [];
   gameHistory.move_list = [];
+  results();
+  showIndex();
 }
 
 function back(){
@@ -104,8 +110,9 @@ function back(){
     document.getElementById('result').innerHTML = gameHistory.result_list[history_tracker.len_index-1];
     document.getElementById("moves").innerHTML = gameHistory.move_list[history_tracker.len_index-1];
     history_tracker.list_length--;
-    history_tracker.cur_index--
-  }  
+    history_tracker.cur_index--;
+  }
+  showIndex();
 }
 
 function next(){
@@ -114,12 +121,12 @@ function next(){
     document.getElementById('result').innerHTML = gameHistory.result_list[history_tracker.len_index+1];
     document.getElementById("moves").innerHTML = gameHistory.move_list[history_tracker.len_index+1];
     history_tracker.list_length++;
-    history_tracker.cur_index++
-  }  
+    history_tracker.cur_index++;
+  }
+  showIndex();
 }
 
-function autoPlay(){
-  const autoPlayElement = document.getElementById('js-autoPlay-btn');
+function autoPlay(){ 
   if (autoPlayElement.innerText === 'Auto Play'){
     autoInterval = setInterval(() => {
     playerMove.human = pickComputerMove();
@@ -133,3 +140,39 @@ function autoPlay(){
   }
 }
   
+
+const rockElement = document.getElementById("js-rock-button");
+const paperElement = document.getElementById("js-paper-button");
+const scissorsElement = document.getElementById("js-scissors-button");
+const resetBtnElement = document.getElementById('js-reset-button');
+const autoPlayElement = document.getElementById('js-autoPlay-button');
+const backBtnElement = document.getElementById('js-back-button');
+const nextBtnElement = document.getElementById('js-next-button');
+
+rockElement.addEventListener('click', () => {
+  playMove(0);
+});
+
+paperElement.addEventListener('click', () => {
+  playMove(1);
+});
+
+scissorsElement.addEventListener('click', () => {
+  playMove(2);
+});
+
+resetBtnElement.addEventListener('click', () => {
+  reset();
+});
+
+autoPlayElement.addEventListener('click', () => {
+  autoPlay();
+});
+
+backBtnElement.addEventListener('click', () => {
+  back();
+});
+
+nextBtnElement.addEventListener('click', () => {
+  next();
+});
