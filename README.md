@@ -18,6 +18,14 @@ https://github.com/user-attachments/assets/abe931bc-b07c-4d12-98c8-a4740971f4bf
 
 https://github.com/user-attachments/assets/5e817c79-b2db-4f79-8d52-ef923f7094a9
 
+- Updated Feature:
+- press 'r' to play rock
+- press 'p' to play paper
+- press 's' to play scissors
+- press 'q' to reset
+- press 'a' to auto play
+- press leftArrow key and rightArrow key to go through move list
+
 
 ## Todo List
 <img width="500" height="auto" alt="Screenshot 2026-07-14 093117" src="https://github.com/user-attachments/assets/8a639967-bd21-4c77-96cb-5e2b4d660373" />
